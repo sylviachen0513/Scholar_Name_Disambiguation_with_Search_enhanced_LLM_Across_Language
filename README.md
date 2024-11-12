@@ -8,3 +8,14 @@ This project aims to achieve scholar name disambiguation by using the search eng
 - Information Comparison Function: By comparing the information of different scholars, the project can effectively measure the similarity of scholars, reduce information confusion, and improve the accuracy of academic research.
 ## Datasets
 There are two data sets involved in the project, one is from the list of scholars who have won major awards, and the other is from the introduction of the authors of the papers. We have prepared a data set for testing purposes, which you can download and use.
+## Function call
+- get_talent_doc.py: Get and organize scholar information
+- compare_function.py: Compare scholars
+### Input format requirements:
+The input string must conform to the json format of the dictionary type, and the corresponding format of each key-value pair is as follows:
+- name:str
+- workplace:str
+- email:list or str,such as ['123@qq.com']
+- honor_track:json,such as [{"time":"2005","award":"奖项"}]
+- education_track:json,such as [{"fromto":"2005","school":"学校","major":"专业","scholar":"学士"}]
+- professional_track:json,such as [{"fromto":"2005","agency":"单位","title":"职务"}]
