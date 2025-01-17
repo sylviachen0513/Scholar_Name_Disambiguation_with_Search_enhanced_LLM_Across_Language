@@ -9,8 +9,9 @@ This project aims to achieve scholar name disambiguation by using the search eng
 ## Datasets
 There are two data sets involved in the project, one is from the list of scholars who have won major awards, and the other is from the introduction of the authors of the papers. We have prepared a data set for testing purposes, which you can download and use.
 ## Function call
-- get_talent_doc.py: Get and organize scholar information
-- compare_function.py: Compare scholars
+- profile_extract_agent.py: Return structured profile of the scholar
+- name_translate_agent.py: Partially translate certain information
+- disambiguation_agent.py: Compare the structured information
 ### Input format requirements:
 The input string must conform to the json format of the dictionary type, and the corresponding format of each key-value pair is as follows:
 - name:str
